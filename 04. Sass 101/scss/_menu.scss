@@ -1,0 +1,50 @@
+header {
+    background: $main-background;
+    text-align: center;
+    font-family: $primary-font-family;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4em;
+    
+    > * {
+        display: flex;
+        align-items: center;
+    }
+    
+    a {
+        text-decoration: none;
+        color: $font-accent;
+    }
+    > a {
+        font-size: 34px;
+        font-weight: $font-weight-bold;
+    }
+    a span {
+        width: 34px;
+        height: 34px;
+        display: inline-block;
+        background: $primary-accent;
+        line-height: 34px;
+        color: $logo-color;
+        border-radius: $border-radius6;
+        text-align: center;
+    }
+    li {
+        width: 60px;
+        list-style: none;
+    }
+    
+}
+ul li:after {
+    content: '';
+    height: 2px;
+    background-color: $primary-accent;
+    display: block;
+    width: 0px;
+    margin: 5px auto;
+    transition: width 0.5s;
+}
+&:hover:after {
+    width: 100%;
+} 
