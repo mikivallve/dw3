@@ -6,13 +6,13 @@
     padding-top: 40px;
     line-height: 1.2;
     text-align: center;
-    font-family: 'Hind', sans-serif;
-}
-
-.seccion-7 img {
-    display: block;
-    width: 100%;
-    margin: auto;
+    font-family: $primary-font-family;
+    
+    img {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
 }
 
 /*Escenario 8*/
