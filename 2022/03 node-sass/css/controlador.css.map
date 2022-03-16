@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "controlador.css",
+	"sources": [
+		"../src/scss/controlador.scss",
+		"../src/scss/_variables.scss",
+		"../src/scss/_general.scss",
+		"../src/scss/_menu.scss",
+		"../src/scss/_footer.scss"
+	],
+	"names": [],
+	"mappings": "AEAA,AAAA,CAAC,AAAC,CACD,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,AAED,AAAA,IAAI,AAAC,CACJ,gBAAgB,CDNR,GAAG,CCOX,AEPD,AAAA,MAAM,AAAC,CACN,SAAS,CAAE,KAAK,CAChB"
+}
