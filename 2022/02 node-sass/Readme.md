@@ -3,7 +3,7 @@
 ### 1- clonar este repositorio
 ### 2- inicializar npm con `npm init`
 ### 3- instalar sass a nivel global `npm i -g sass`
-# 4- empezar a "observar" el archivo controlador.scss y compilar los cambios en estilos.css 
+### 4- empezar a "observar" el archivo controlador.scss y compilar los cambios en estilos.css 
 ### ```sass --watch src/scss/controlador.scss:css/estilos.css```
 
 La sintaxis es ```sass --watch orignen:destino``` 
