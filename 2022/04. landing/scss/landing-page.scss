@@ -1,0 +1,17 @@
+
+
+// Core variables and mixins
+@import '_variables.scss';
+@import 'mixins';
+// Global CSS
+@import 'global';
+// Components
+@import 'masthead';
+@import 'showcase';
+@import 'icons';
+@import 'testimonials';
+@import 'call-to-action';
+@import 'footer';
+
+@import '../node_modules/simple-line-icons/scss/simple-line-icons';
+@import '../node_modules/bootstrap/scss/bootstrap';

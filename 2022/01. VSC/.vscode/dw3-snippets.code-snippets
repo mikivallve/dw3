@@ -1,0 +1,80 @@
+{
+	"Brakepoints para media query": {
+        "prefix": "bK",
+		"scope": "css, scss, html, javascript",
+        "body": [
+            "@media screen and (min-width: 0px) and (max-width: 575px){$1}",
+            "@media screen and (min-width: 576px) and (max-width: 767px){$2}",
+            "@media screen and (min-width: 768px) and (max-width: 959px){$3}",
+            "@media screen and (min-width: 960px) and (max-width: 1279px){$4}",
+            "@media screen and (min-width: 1280px) and (max-width: 1919px){$5}",
+            "@media screen and (min-width: 1920px){$6}"
+        ],
+        "description": "Brakepoints para responsive"
+     },
+	 
+	 "breaqoe points": {
+        "prefix": "bp",
+		"scope": "css, scss, html, javascript",
+        "body": [
+            "@media screen and (min-width: $1 px) and (max-width: $2 px){$3}"
+        ],
+        "description": "Brakepoints para responsive"
+     },
+	 "Section con Article": {
+        "prefix": "ss",
+		"scope": "html",
+        "body": [
+			"<section>",
+			"<h1>${1:aclaración de lo que es?}</h1>",
+			"<article>",
+			"<h2>${2:subtitulo}</h2>",
+			"<p>$3</p>",
+			"<a href='${4:#}'></a>",
+			"</article>",
+			"</section>",
+		],
+		"description": "armas una seccion"
+	},
+
+	"Contenedor": {
+		"scope": "html",
+		"prefix": "cont",
+		"body": [
+			"<div class='container'>",
+			"	<h1>${1:Ésto es un snippet}</h1>",
+			"</div>"	
+		],
+		"description": "Container"
+	},
+		"ApuntadorID": {
+			"prefix": "aid",
+			"scope": "javascript",
+			"body": [
+				"let ${1:ID}=document.querySelector(#${1:ID});",
+				"$0"
+			],
+			"description": "Apuntador a html ID",
+		},
+		
+		"addEvent Listener": {
+			"prefix": "ael",
+			"scope": "javascript",
+			"body": [
+				"$1.addEventListener('click', $2);",
+				"$0"
+			],
+			"description": "addEventListener",
+		},
+		"Centrado": {
+			"prefix": "cen",
+			"body": [
+				".centrado{",
+				"width:$1;",
+				"margin: 0  auto",
+				"}"
+			],
+			"description": "Clase centrado"
+		 }
+		
+}

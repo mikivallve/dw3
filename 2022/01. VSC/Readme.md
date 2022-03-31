@@ -1,0 +1,1 @@
+Trabajamos sobre snippets de código y espacios de trabajo. No mucho código
