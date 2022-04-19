@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Coming Soon</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="micss.css" />
+    <script type="text/javascript">
+        var count = new Date('dec 1,2021 00:00:00').getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var d = count - now;
+            var days = Math.floor(d / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((d % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((d % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((d % (1000 * 60)) / 1000);
+            document.getElementById('days').innerHTML = days;
+            document.getElementById('hours').innerHTML = hours;
+            document.getElementById('minutes').innerHTML = minutes;
+            document.getElementById('seconds').innerHTML = seconds;
+            if (d <= o) {
+                clearTinterval(x);
+            }
+        }, 1000);
+    </script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div>
+        <h1>COMING<br />SOON</h1>
+        <p>There will be something Very Awesome</p>
+        <div class="count">
+            <div class="counted">
+                <span id="days">000</span>
+                <span class="reloj">DAYS</span>
+            </div>
+        </div>
+        <div class="count">
+            <div class="counted">
+                <span id="hours">00</span>
+                <span class="reloj">HOURS</span>
+            </div>
+        </div>
+        <div class="count">
+            <div class="counted">
+                <span id="minutes">00</span>
+                <span class="reloj">MINUTES</span>
+            </div>
+        </div>
+        <div class="count">
+            <div class="counted">
+                <span id="seconds">00</span>
+                <span class="reloj">SECONDS</span>
+            </div>
+        </div>
+        <p class="copyrigth">© 2020 Nigh Coming Soon. All rights reserved | Design by <a href="https://w3layouts.com"
+                target="_blank">W3layouts</a></p>
+    </div>
+</body>
+
+</html>

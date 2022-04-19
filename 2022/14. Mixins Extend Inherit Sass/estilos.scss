@@ -1,0 +1,75 @@
+// Variables
+$dark: #333;
+$light: #ccc;
+$sombras: 1px 0px 5px $dark;
+$sombra-larga: 5px 5px 20px $dark;
+$hovers: rgb(192, 253, 49);
+
+// Mixins
+@mixin columnas($cuantas:4) {
+	display: grid;
+	grid-gap: 1rem;
+	margin: 2rem;
+	grid-template-columns: repeat(#{$cuantas},auto);
+	@media only screen and (max-width: 600px) {
+		grid-template-columns: repeat(1,auto);
+	}
+}
+
+@mixin bloques($theme){
+	box-shadow: $sombras;
+	@extend %#{$theme};
+	text-align: center;
+	padding: 2rem;
+	@include anima(box-shadow);
+	&:hover{
+		box-shadow: $sombra-larga;
+	}
+}
+
+@mixin anima($que){
+	transition: $que 0.5s 0s ease-in-out;
+}
+
+// Extends
+%dark{
+background-color: $dark;
+color:white;
+}
+
+%light{
+background-color: $light;
+color:$dark;
+}
+
+%textos{
+	font-family:"Helvetica", "Arial", sans-serif;
+	font-weight:bolder;
+}
+
+/* Columnas */
+
+.col-3{
+	@include columnas(3);
+}
+
+.col-5{
+	@include columnas(5)
+}
+
+[class*=col] > *{
+	@extend %textos;
+	@include bloques('dark');
+	&:nth-child(even){
+		@include bloques('light');
+	}
+	&:hover{
+		color: $hovers;
+	}
+	*{@include anima(color);}
+	
+}
+/* flow y control */
+@for $i from 6 through 10 {
+	.col-#{$i}{@include columnas(#{$i})}
+}

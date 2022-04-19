@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img,svg {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    background-repeat: no-repeat;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+}
+
+/* es una "capa" que esta por debajo de todo, en posición absoluta */
+.overlay {
+    height: 100vh; /* alto total */
+    width: 100vw; /* ancho total */
+    position: absolute; /* posición absoluta para que sacarlo de plano y que no "empuje" otros elementos */
+    top: 0; /* ubicamos este elemento arriba a la izquierda */
+    left: 0;
+    z-index: -1; /* le pedimos que este por debajo de todos los demás elementos */
+    background-color: rgba(29, 14, 27, 0.5); /* le damos un color de fondo con transparencia */
+}
+
+div {
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 200px;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 108px;
+    color: white;
+}
+
+.count {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* le sacamos el borde al ultimo */
+/* :last-child no funciona porque hay un <p> como last child, por eso tenemos que ir con last of type */
+.count:last-of-type {
+    border-right: none;
+}
+
+.counted span {
+    display: block;
+}
+
+.reloj {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+p {
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 20px 0px 40px;
+}
+
+.copyrigth {
+    margin-top: 100px;
+}
+
+p a:only-child {
+    text-decoration: none;
+    color: white;
+    transition: color 0s ease;
+}
+
+p a:only-child:hover {
+    color: aqua;
+}
