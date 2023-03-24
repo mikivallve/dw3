@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #666;
+    transition: background 0.2s 0.1s, color 0.4s;
+}
+
+header {
+    text-align: right;
+    position: fixed;
+    width: 100%;
+}
+
+header > span {
+    display: inline-block;
+    border: 1px solid grey;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: black;
+    cursor: pointer;
+}
+
+main {
+    max-width: 25rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+main > h1 {
+    margin-bottom: 0.5em;
+}
+
+header > #light,
+.light {
+    background: white;
+}
+
+header > #dark,
+.dark {
+    background: #333;
+    color: antiquewhite;
+}
+
+header > #peach,
+.peach {
+    background: linear-gradient(135deg, rgba(238, 174, 202, 1) 0%, rgba(230, 143, 144, 1) 44%, rgba(214, 113, 18, 1) 98%);
+    color: #000;
+}
